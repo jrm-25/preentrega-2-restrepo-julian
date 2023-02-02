@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav nav nav nav nav"
+        "main main main main main"
+        "main main main main main"
+        "main main main main main"
+        "footer footer footer footer footer";
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "logo titulo menu";
+    grid-area: nav;
+    background-color: #A27035;
+    color: white;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "foto-1 foto-a foto-b"
+        "foto-1 foto-c foto-d";
+    grid-area: main;
+}
+
+.foto-1 {
+    grid-area: foto-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.joel {
+    width: 100%;
+
+}
+
+.foto-a {
+    display: flex;
+    flex-direction: column;
+    grid-area: foto-a;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.funko {
+    width: 100%;
+}
+
+.foto-b {
+    display: flex;
+    flex-direction: column;
+    grid-area: foto-b;
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.foto-c {
+    grid-area: foto-c;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.got {
+    width: 100%;
+
+}
+
+.foto-d {
+    grid-area: foto-d;
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tlou {
+    width: 100%;}
+
+.footer{
+    grid-area: footer;
+    background-color: #DDCA7D;
+    display: flex;
+    justify-content: center;
+}
+.instagram{
+    padding: 20px;
+    width: 50px;
+}
+.twitter{
+    width: 50px;
+    padding: 20px;
+}
